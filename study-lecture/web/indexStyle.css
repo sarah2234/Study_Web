@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Pretendo', sans-serif;
+}
+
+.top {
+    background-color: red;
+    height: 450px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.topTitle {
+    margin-left: 50px;
+}
+
+.topImg {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    position: absolute;
+    left: 1200px;
+    height: 450px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        left: 1500px;
+    }
+    to {
+        opacity: 1;
+        left: 1200px;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+div.top h1 {
+    color: white;
+    font-family: 'Pretendo', sans-serif;
+    padding-left: 55px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+button {
+    text-align: center;
+}
+
+button.loginBtn {
+    position: absolute;
+    left: 1700px;
+    top: 25px;
+    border: 3px solid white;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    width: 75px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 10px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: white;
+    color: red;
+}
+
+nav {
+    background-color: #e5e5e5;
+    padding: 18px 80px;
+}
+
+nav a {
+    margin: 10px 40px;
+    color: slategrey;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:visited {
+    color: slategrey;
+}
+
+a:hover {
+    color: #303030;
+}
