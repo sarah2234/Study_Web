@@ -19,7 +19,7 @@
         <h1 class="webTitle">Swap Shop</h1>
     </span>
     <img src="image/switch.png" class="topImg" alt="topImg" />
-    <button class="loginBtn">login</button>
+    <button class="loginBtn" onclick="location.href='login.html'">login</button>
 </div>
 
 <div class="navigator">

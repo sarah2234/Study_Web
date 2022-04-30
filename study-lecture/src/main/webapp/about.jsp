@@ -26,5 +26,10 @@
     </nav>
 </div>
 
+<div class="content">
+    <h2>Find Your Games at a Reasonable Price</h2>
+    <p>Nintendo eShop에서 판매 중인 게임 가격을 국가별로 한 눈에 확인해보세요.</p>
+    <p>당신이 원하는 게임을 최저가로 구매하실 수 있습니다.</p>
+</div>
 </body>
 </html>
