@@ -24,7 +24,7 @@
             <p style="margin-left: 120px;">Newly Released</p>
         </span>
     </a>
-    <img src="image/zelda.png" class="topImg" alt="topImg" />
+    <img src="image/new_game1.png" class="topImg" alt="topImg" />
     <button class="loginBtn" onclick="location.href='login.html'">login</button>
 </div>
 
@@ -47,7 +47,7 @@
 
                 int cheapest = 0; // 초기: 달러가 제일 쌈
                 // 미국과 한국 비교
-                if(list.get(i).getNewlyReleasedPrice(1) > 0) {
+                if(list.get(i).getNewlyReleasedPrice(1) > 0 && list.get(i).getNewlyReleasedPrice(2) > 0) {
                     if (Math.min(list.get(i).getNewlyReleasedPrice(0) * 1263.48, list.get(i).getNewlyReleasedPrice(1))
                             == list.get(i).getNewlyReleasedPrice(1))
                         cheapest = 1;

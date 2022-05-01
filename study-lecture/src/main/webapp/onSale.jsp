@@ -21,10 +21,10 @@
     <a href="index.jsp">
         <span class="topTitle">
             <img src="image/Nintendo-Logo.png" alt="Nintendo Logo" />
-            <p style="margin-left: 120px;">Newly Released</p>
+            <p style="margin-left: 120px;">On Sale</p>
         </span>
     </a>
-    <img src="image/zelda.png" class="topImg" alt="topImg" />
+    <img src="image/splatoon.png" class="topImg" alt="topImg" />
     <button class="loginBtn" onclick="location.href='login.html'">login</button>
 </div>
 
