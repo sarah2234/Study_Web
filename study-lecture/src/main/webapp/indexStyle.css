@@ -7,6 +7,14 @@ a {
     font-family: 'Pretendo', sans-serif;
 }
 
+html {
+    height: 150%;
+}
+
+body {
+    height: 150%;
+}
+
 .top {
     background-color: red;
     height: 450px;
@@ -119,6 +127,12 @@ a:hover {
     color: #303030;
 }
 
-.content {
+div.content {
+    height: 100%;
     padding: 40px;
+    background-image: url("image/pinkReceipt.png");
+    background-size: auto;
+    background-repeat: repeat;
+    margin-bottom: 400px;
 }
+

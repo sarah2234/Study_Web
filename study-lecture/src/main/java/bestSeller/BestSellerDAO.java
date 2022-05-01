@@ -34,8 +34,12 @@ public class BestSellerDAO {
                 BestSeller bestSeller = new BestSeller();
                 bestSeller.setBestSellerId(rs.getInt("id"));
                 bestSeller.setBestSellerName(rs.getString("name"));
-                //bestSeller.setBestSellerReleasedDate(rs.getTimestamp("released_date"));
-                bestSeller.setBestSellerDollar(rs.getDouble("dollar"));
+                bestSeller.setBestSellerReleaseDate(rs.getTimestamp("release_date"));
+                bestSeller.setBestSellerImageURL(rs.getString("image"));
+                bestSeller.setBestSellerPrice(0, rs.getDouble("us_price"));
+                bestSeller.setBestSellerPrice(1, rs.getDouble("kor_price"));
+                bestSeller.setBestSellerPrice(2, rs.getDouble("jap_price"));
+                bestSeller.setBestSellerPrice(3, rs.getDouble("uk_price"));
                 list.add(bestSeller);
             }
             return list;

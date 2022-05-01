@@ -19,7 +19,6 @@
 </div>
 <div class="navigator">
     <nav>
-        <a href="./about.jsp">About</a>
         <a href="bestSellers.jsp">Best Sellers</a>
         <a href="newlyReleased.jsp">Newly Released</a>
         <a href="#">On Sale</a>

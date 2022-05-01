@@ -1,9 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-        pageEncoding="EUC-KR"%>
-<%@ page import="bestSeller.BestSeller" %>
-<%@ page import="bestSeller.BestSellerDAO" %>
-<%@ page import="java.util.ArrayList" %>
-
+         pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,33 +12,23 @@
 <div class="top">
     <span class="topTitle">
         <img src="image/Nintendo-Logo.png" alt="Nintendo Logo" />
-        <h1 class="webTitle">Swap Shop</h1>
+        <h1 class="webTitle">About</h1>
     </span>
-    <img src="image/switch.png" class="topImg" alt="topImg" />
-    <button class="loginBtn" onclick="location.href='login.html'">login</button>
+    <img src="image/eshop.png" class="topImg" alt="topImg" />
+    <button class="loginBtn">login</button>
 </div>
-
 <div class="navigator">
     <nav>
-        <a href="./about.jsp">About</a>
         <a href="bestSellers.jsp">Best Sellers</a>
         <a href="newlyReleased.jsp">Newly Released</a>
         <a href="onSale.jsp">On Sale</a>
     </nav>
 </div>
 
-<div class="productLines">
-    <div class="bestSellers">
-        <%
-            BestSellerDAO bestSellerDAO = new BestSellerDAO();
-            ArrayList<BestSeller> list = bestSellerDAO.getBestSellers();
-            for(int i = 0; i < list.size(); i++) {
-        %>
-        <p><%=list.get(i).getBestSellerName()%></p>
-        <%
-            }
-        %>
-    </div>
+<div class="content">
+    <h2>Find Your Games at a Reasonable Price</h2>
+    <p>Nintendo eShop에서 판매 중인 게임 가격을 국가별로 한 눈에 확인해보세요.</p>
+    <p>당신이 원하는 게임을 최저가로 구매하실 수 있습니다.</p>
 </div>
 </body>
 </html>
