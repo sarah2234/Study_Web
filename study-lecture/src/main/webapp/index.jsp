@@ -20,13 +20,12 @@
 
     <button class="loginBtn" onclick="location.href='login.html'">login</button>
 </div>
-<div>
-    <nav>
-        <a href="bestSellers.jsp" class="navigator">Best Sellers</a>
-        <a href="newlyReleased.jsp" class="navigator">Newly Released</a>
-        <a href="onSale.jsp" class="navigator">On Sale</a>
-    </nav>
-</div>
+
+<nav>
+    <a href="bestSellers.jsp" class="navigator">Best Sellers</a>
+    <a href="newlyReleased.jsp" class="navigator">Newly Released</a>
+    <a href="onSale.jsp" class="navigator">On Sale</a>
+</nav>
 
 <div class="content">
     <h1 class="slide-top" style="margin-top: 60px; font-size: 70px; width: auto;">Find Your Games at a <br>Reasonable Price</h1>

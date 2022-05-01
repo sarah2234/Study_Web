@@ -211,6 +211,8 @@ nav {
     background-color: #e5e5e5;
     padding: 18px 80px;
     position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav a {

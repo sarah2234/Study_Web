@@ -28,13 +28,11 @@
     <button class="loginBtn" onclick="location.href='login.html'">login</button>
 </div>
 
-<div>
-    <nav>
-        <a href="bestSellers.jsp" class="navigator">Best Sellers</a>
-        <a href="newlyReleased.jsp" class="navigator">Newly Released</a>
-        <a href="#" class="navigator" style="color: #303030;">On Sale</a>
-    </nav>
-</div>
+<nav>
+    <a href="bestSellers.jsp" class="navigator">Best Sellers</a>
+    <a href="newlyReleased.jsp" class="navigator">Newly Released</a>
+    <a href="#" class="navigator" style="color: #303030;">On Sale</a>
+</nav>
 
 <div class="content">
     <div class="container slide-left">
