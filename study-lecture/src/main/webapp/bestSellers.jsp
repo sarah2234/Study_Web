@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="indexStyle.css" rel="stylesheet">
+    <link href="mainStyle.css" rel="stylesheet">
     <link href="tableStyle.css" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/pretendo" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,24 +18,26 @@
 </head>
 <body>
 <div class="top">
-    <span class="topTitle">
-        <img src="image/Nintendo-Logo.png" alt="Nintendo Logo" />
-        <h1 class="webTitle">Swap Shop</h1>
-    </span>
-    <img src="image/switch.png" class="topImg" alt="topImg" />
+    <a href="index.jsp">
+        <span class="topTitle">
+            <img src="image/Nintendo-Logo.png" alt="Nintendo Logo" />
+            <p style="margin-left: 120px;">Best Sellers</p>
+        </span>
+    </a>
+    <img src="image/zelda.png" class="topImg" alt="topImg" />
     <button class="loginBtn" onclick="location.href='login.html'">login</button>
 </div>
 
-<div class="navigator">
+<div>
     <nav>
-        <a href="#">Best Sellers</a>
-        <a href="newlyReleased.jsp">Newly Released</a>
-        <a href="onSale.jsp">On Sale</a>
+        <a href="#" class="navigator" style="color: #303030;">Best Sellers</a>
+        <a href="newlyReleased.jsp" class="navigator">Newly Released</a>
+        <a href="onSale.jsp" class="navigator">On Sale</a>
     </nav>
 </div>
 
 <div class="content">
-    <div class="container">
+    <div class="container slide-left">
         <%
             BestSellerDAO bestSellerDAO = new BestSellerDAO();
             ArrayList<BestSeller> list = bestSellerDAO.getBestSellers();
@@ -121,5 +123,6 @@
         %>
     </div>
 </div>
+<footer>오픈소스 웹소프트웨어 과제-2020039075 이승현</footer>
 </body>
 </html>

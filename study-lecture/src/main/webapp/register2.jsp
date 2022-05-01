@@ -22,7 +22,7 @@
     if(result == -1){ // 아이디가 기본키기. 중복되면 오류.
         PrintWriter script = response.getWriter();
         script.println("<script>");
-        script.println("alert('can not.')");
+        script.println("alert('Cannot Register!')");
         script.println("history.back()");
         script.println("</script>");
     }

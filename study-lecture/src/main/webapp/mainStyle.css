@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Pretendo', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    height: 150%;
+}
+
+body {
+    height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    background-color: red;
+    height: 350px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.topTitle {
+    margin-left: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+.topImg {
+    animation: topImage 2s;
+    -webkit-animation: topImage 2s; /* Safari and Chrome */
+    position: absolute;
+    left: 1200px;
+    height: 350px;
+}
+
+.slide-bottom {
+    animation: slide-bottom 2s;
+    -webkit-animation: slide-bottom 2s;
+    position: relative;
+}
+
+.slide-top {
+    animation: slide-top 2s;
+    -webkit-animation: slide-top 2s;
+    position: relative;
+}
+
+.slide-left {
+    animation: slide-left 2s;
+    -webkit-animation: slide-left 2s;
+    position: relative;
+}
+
+.slide-right {
+    animation: slide-right 2s;
+    -webkit-animation: slide-right 2s;
+    position: relative;
+}
+
+@keyframes topImage {
+    from {
+        opacity: 0;
+        left: 1500px;
+    }
+    to {
+        opacity: 1;
+        left: 1200px;
+    }
+}
+
+@-webkit-keyframes topImage { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-bottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@-webkit-keyframes slide-bottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@keyframes slide-top {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes slide-top {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        right: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    from {
+        right: -100px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+div.top h1 {
+    color: white;
+    font-family: 'Pretendo', sans-serif;
+    padding-left: 55px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+button {
+    text-align: center;
+}
+
+button.loginBtn {
+    position: absolute;
+    left: 1700px;
+    top: 25px;
+    border: 3px solid white;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    width: 75px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 10px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: white;
+    color: red;
+}
+
+nav {
+    background-color: #e5e5e5;
+    padding: 18px 80px;
+    position: sticky;
+}
+
+nav a {
+    margin: 10px 40px;
+    color: slategrey;
+    font-size: 18px;
+}
+
+a:visited {
+    color: slategrey;
+}
+
+a:hover {
+    color: #303030;
+}
+
+div.content {
+    height: 100%;
+    padding: 40px;
+    background-image: url("image/pinkReceipt.png");
+    background-size: auto;
+    background-repeat: repeat;
+    margin-bottom: 400px;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+}
+
