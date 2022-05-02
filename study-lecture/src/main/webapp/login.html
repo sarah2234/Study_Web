@@ -6,7 +6,10 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #e5e5e5;
+            background-image: url("image/pinkReceipt.png");
+            background-size: auto;
+            background-repeat: repeat;
+            background-position-y: -300px;
         }
 
         /* Full-width input fields */
@@ -38,13 +41,13 @@
         /* Center the image and position the close button */
         .imgcontainer {
             text-align: center;
-            margin: 24px 0 12px 0;
+            margin: 0 0 12px 0;
             position: relative;
         }
 
-        img.unlock {
-            width: 10%;
-            border-radius: 50%;
+        img.my-nintendo-logo {
+            width: 30%;
+            border-radius: 8px;
         }
 
         .container {
@@ -58,7 +61,7 @@
             border: 5px solid red;
             border-radius: 10px;
             width: 30%;
-            height: 60%;
+            height: 65%;
         }
 
         /* Add Zoom Animation */
@@ -108,8 +111,11 @@
 
     <form class="modal-content animate" action="login2.jsp" method="post">
 
+        <p style="text-align: center; margin-bottom: 0; font-size: 12px; color: slategray;">Click Below!</p>
         <div class="imgcontainer">
-            <img src="./image/unlock.png" alt="unlock" class="unlock">
+            <a href="https://www.nintendo.com/store/">
+                <img src="./image/my_nintendo_logo_store.webp" alt="my-nintendo-logo" class="my-nintendo-logo">
+            </a>
             <h2>Login</h2>
         </div>
 
