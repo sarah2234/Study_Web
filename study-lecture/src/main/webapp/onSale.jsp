@@ -81,7 +81,7 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2"><%=list.get(i).getOnSaleSale()%>% Sale (Won)</td>
+                    <td colspan="2"><%=Math.round(list.get(i).getOnSaleSale() * 100)%>% Sale (Won)</td>
                 </tr>
                 <tr>
                     <td colspan="2"><hr color="red" style="border: 0; height: 1px;"></td>
